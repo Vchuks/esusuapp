@@ -1,38 +1,21 @@
-.App {
-  text-align: center;
+.hero{
+  background-image:linear-gradient(rgba(18, 60, 149, 0.9), rgba(14, 19, 60, 0.9)), url("images/people.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.hero2{
+  background-image:linear-gradient(rgba(18, 60, 149, 0.9), rgba(14, 19, 60, 0.9)), url("images/phone.png");
+  
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.foot{
+  background-color: rgb(7, 7, 37);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width:800px) {
+  .hero{
+    background-size:auto;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
