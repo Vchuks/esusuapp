@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="font-mono relative">
+    <div className="font-mono relative h-full">
       <Navbar />
       <Routes>
         <Route path="/esusuapp" element={<Home />}></Route>

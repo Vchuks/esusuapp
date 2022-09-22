@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="text-lg md:w-2/4">
         <p className="text-2xl md:text-3xl mb-4 flex items-center gap-2">
           <span>
-            <img src={logo} alt="logo" width={80} />
+            <img src={logo} alt="logo" width={80} className="w-16 md:w-20" />
           </span>
           esusu.online
         </p>

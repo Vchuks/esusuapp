@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "boxicons";
 import { Link } from "react-router-dom";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
+  const form = useRef();
   const [data, setData] = useState({
     fname: "",
     email: "",
@@ -14,24 +16,28 @@ const Contact = () => {
     setData((prevData) => {
       return {
         ...prevData,
-        [name]: value,
+        [name]: value.trimStart(),
       };
     });
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(data);
-    //create an account with emailjs
-    // emailjs
-    //   .sendForm(`gmail`, apiKey.TEMPLATE_ID, e.target, apiKey.USER_ID)
-    //   .then(
-    //     (result) => {
-    //       alert("Message Sent, We will get back to you shortly", result.text);
-    //     },
-    //     (error) => {
-    //       alert("An error occurred, Please try again", error.text);
-    //     }
-    //   );
+    emailjs
+      .sendForm(
+        "service_ykbt2hc",
+        "template_yn12slb",
+        form.current,
+        "u9nFZnSnckXoJ5TKj"
+      )
+      .then(
+        (result) => {
+          alert("Message sent");
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
   return (
     <>
@@ -83,6 +89,7 @@ const Contact = () => {
           </div>
 
           <form
+            ref={form}
             onSubmit={handleSubmit}
             className="w-full text-xl grid grid-cols-2 gap-4"
           >
@@ -94,6 +101,7 @@ const Contact = () => {
                 name="fname"
                 value={data.fname}
                 onChange={handleChange}
+                required
               />
             </div>
             <div>
@@ -114,6 +122,7 @@ const Contact = () => {
                 name="subject"
                 value={data.subject}
                 onChange={handleChange}
+                required
               />
             </div>
             <div className="col-span-2">
@@ -124,6 +133,7 @@ const Contact = () => {
                 name="message"
                 value={data.message}
                 onChange={handleChange}
+                required
               ></textarea>
             </div>
             <button

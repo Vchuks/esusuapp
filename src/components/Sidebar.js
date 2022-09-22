@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
 
 const Sidebar = () => {
@@ -8,42 +7,33 @@ const Sidebar = () => {
   const handleDrop = () => {
     return setDropdown(!dropdown);
   };
-  const navStyle = ({ isActive }) => {
-    return {
-      fontWeight: isActive ? "bold" : "normal",
-    };
-  };
   return (
-    <div className="w-auto block md:hidden justify-between text-white h-screen items-center absolute right-0 top-24 hero  p-8 pb-24">
+    <div className="w-auto block md:hidden justify-between text-white h-screen tall:overflow-y-scroll items-center absolute right-0 top-20 hero  p-8 pb-24">
       <NavHashLink
         smooth
         to="#top"
-        style={navStyle}
-        className="hover:text-2xl hover:text-blue-600  h-8 hover:text-opacity-70 block mb-4"
+        className=" hover:text-blue-400  h-8 hover:text-opacity-70 block mb-4"
       >
         Home
       </NavHashLink>
       <NavHashLink
         smooth
         to="#feature"
-        style={navStyle}
-        className="hover:text-2xl hover:text-blue-600 h-8 hover:text-opacity-70 block mb-4"
+        className=" hover:text-blue-400 h-8 hover:text-opacity-70 block mb-4"
       >
         Features
       </NavHashLink>
       <NavHashLink
         smooth
         to="#faq"
-        style={navStyle}
-        className="hover:text-2xl hover:text-blue-600 h-8 hover:text-opacity-70 block mb-4"
+        className=" hover:text-blue-400 h-8 hover:text-opacity-70 block mb-4"
       >
         Faq's
       </NavHashLink>
       <NavHashLink
         smooth
         to="#contact"
-        style={navStyle}
-        className="hover:text-2xl hover:text-blue-600 h-8 hover:text-opacity-70 block mb-4"
+        className=" hover:text-blue-400 h-8 hover:text-opacity-70 block mb-4"
       >
         Contact Us
       </NavHashLink>
@@ -55,7 +45,7 @@ const Sidebar = () => {
           Login
         </button>
         {dropdown ? (
-          <div className="flex flex-col gap-y-2 py-4 px-10 absolute ">
+          <div className="flex flex-col gap-y-2 py-4 px-10 h-screen absolute">
             {/* to navigate to external link
             <a
                 href="https://facebook.com"
@@ -64,27 +54,30 @@ const Sidebar = () => {
               >
                 Customer
               </a> */}
-            <NavLink
-              to="#"
-              style={navStyle}
-              className="hover:text-2xl h-8 hover:text-opacity-70"
+            <a
+              href="https://app.esusu.online"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-2xl hover:text-opacity-70 h-8"
             >
               Customer
-            </NavLink>
-            <NavLink
-              to="#"
-              style={navStyle}
-              className="hover:text-2xl h-8 hover:text-opacity-70"
+            </a>
+            <a
+              href="https://app.esusu.online/agent"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-2xl hover:text-opacity-70 h-8"
             >
               Agent
-            </NavLink>
-            <NavLink
-              to="#"
-              style={navStyle}
-              className="hover:text-2xl h-8 hover:text-opacity-70"
+            </a>
+            <a
+              href="https://app.esusu.online/fsp"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-2xl hover:text-opacity-70 h-8"
             >
               FSP
-            </NavLink>
+            </a>
           </div>
         ) : null}
       </div>

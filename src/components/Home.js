@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import play from "../images/play.svg";
+import icon from "../images/default.gif";
 import Features from "./Features";
 import Review from "./Review";
 import Faq from "./Faq";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import VideoSection from "./VideoSection";
-import phone from "../images/phone.png";
 
 const Home = () => {
   return (
@@ -30,16 +30,16 @@ const Home = () => {
             </div>
             <div>
               <button className="bg-slate-200 font-bold text-xl text-blue-900 py-3 px-4 md:py-4 md:px-8 rounded-full hover:bg-inherit hover:text-white hover:border-2">
-                <Link to="#">Get Started</Link>
+                <a href="#videosection">Get Started</a>
               </button>
             </div>
           </div>
         </div>
         <div className="hidden md:block w-full">
           <img
-            src={phone}
+            src={icon}
             alt="esusu.online gadget"
-            className="animate-bounceslow m-auto"
+            className="animate-bounceslow m-auto rounded-large"
           />
         </div>
       </section>
@@ -48,7 +48,7 @@ const Home = () => {
         <Features />
       </section>
 
-      <section>
+      <section id="videosection">
         <VideoSection />
       </section>
 

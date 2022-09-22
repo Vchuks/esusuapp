@@ -30,6 +30,13 @@ module.exports = {
         "extra-loose": "3",
         11: "3rem",
       },
+      borderRadius: {
+        large: "3.5rem",
+      },
+      screens: {
+        tall: { raw: "(max-height: 400px)" },
+        // => @media (min-height: 800px) { ... }
+      },
     },
   },
   plugins: [],
