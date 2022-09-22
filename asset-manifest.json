@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/esusuapp/static/css/main.8b2d7545.css",
-    "main.js": "/esusuapp/static/js/main.e9890d77.js",
+    "main.css": "/esusuapp/static/css/main.201f1bbd.css",
+    "main.js": "/esusuapp/static/js/main.675ba819.js",
     "static/js/787.bdcf6888.chunk.js": "/esusuapp/static/js/787.bdcf6888.chunk.js",
     "static/media/people.png": "/esusuapp/static/media/people.1f6ce6ef81651bd97cb6.png",
+    "static/media/default.gif": "/esusuapp/static/media/default.88015dc66fd2ccd5c0fe.gif",
     "static/media/phone.png": "/esusuapp/static/media/phone.af86ea0b4aa717abcc34.png",
     "static/media/logo.png": "/esusuapp/static/media/logo.250f98ea02e5a80a8c4e.png",
     "static/media/pic2.jpg": "/esusuapp/static/media/pic2.1c79a6dc8198f2329efa.jpg",
@@ -14,12 +15,12 @@
     "static/media/bank.svg": "/esusuapp/static/media/bank.22602078b6c10f7b2433c8bd7b303835.svg",
     "static/media/wallet.svg": "/esusuapp/static/media/wallet.ec1b9037c8b7126a5d76a851b61909d8.svg",
     "static/media/plus.svg": "/esusuapp/static/media/plus.d52308562b94adb519fdcbe8556942cd.svg",
-    "main.8b2d7545.css.map": "/esusuapp/static/css/main.8b2d7545.css.map",
-    "main.e9890d77.js.map": "/esusuapp/static/js/main.e9890d77.js.map",
+    "main.201f1bbd.css.map": "/esusuapp/static/css/main.201f1bbd.css.map",
+    "main.675ba819.js.map": "/esusuapp/static/js/main.675ba819.js.map",
     "787.bdcf6888.chunk.js.map": "/esusuapp/static/js/787.bdcf6888.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b2d7545.css",
-    "static/js/main.e9890d77.js"
+    "static/css/main.201f1bbd.css",
+    "static/js/main.675ba819.js"
   ]
 }
